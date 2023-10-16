@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address to ZIP Code</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="countryInput" placeholder="Enter country" />
+      <input type="text" id="cityInput" placeholder="Enter city" />
+      <textarea
+        id="addressInput"
+        rows="10"
+        cols="50"
+        placeholder="Enter addresses (one per line)"
+      ></textarea>
+      <button onclick="fetchZIPCodes()">Get ZIP Codes</button>
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>Address</th>
+            <th>ZIP Code</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
